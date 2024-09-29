@@ -976,7 +976,7 @@ button {
 
 /* #endregion modal */
 
-/* #region Mobile menu */
+/* #region mobile menu */
 .mobile-menu-btn {
   position: absolute;
   display: flex;
@@ -1079,4 +1079,4 @@ button {
 }
 
 
-/* #endregion */
+/* #endregion mobile menu */
