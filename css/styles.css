@@ -376,11 +376,48 @@ button {
 
 /* #region benefits */
 
+.benefits__list {
+  flex-wrap: wrap;
+  justify-content: center;
+  --items: 1;
+  row-gap: 72px;
+}
+@media (min-width: 768px) and (max-width: 1157px) {
+  .benefits__list {
+    --items: 2;
+  }
+}
+@media (min-width: 1158px) {
+  .benefits__list {
+    --items: 4;
+  }
+}
+
 .benefits__subtitle {
   margin-top: 0;
+  text-align: center;
 }
+@media (max-width: 1157px) {
+  .benefits__subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  .benefits__desc {
+    font-weight: 500;
+  }
+}
+@media (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: left;
+  }
+}
+
 .card-set-icon-wrapper {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 264px;
@@ -389,6 +426,11 @@ button {
   border-radius: 4px;
   border: 1px solid var(--subtle-text);
   background: var(--light);
+}
+@media (min-width: 1158px) {
+  .card-set-icon-wrapper {
+    display: flex;
+  }
 }
 
 /* #endregion benefits */
